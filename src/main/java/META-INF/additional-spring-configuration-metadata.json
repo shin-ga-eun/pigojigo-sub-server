@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.resources.image-locations",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.resources.image-locations'"
+  },
+  {
+    "name": "spring.resources.image-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.resources.image-url'"
+  }
+]}
