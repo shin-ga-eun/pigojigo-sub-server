@@ -115,6 +115,17 @@ public class RqdocService {
         return cal;
     }
 
+    private int calMngPrice(Subscription subscription, int curCnt) {
+
+        int totalPrice = subscription.getPrice();
+        int totalCnt = calTotalCnt(subscription);
+        int cal = 0;
+
+        cal = totalPrice - (totalPrice / totalCnt) * (curCnt);
+
+        return cal;
+    }
+
     private int calTotalCnt(Subscription subscription) {
         return Integer.parseInt(subscription.getPickUpCycleCd()) * Integer.parseInt(subscription.getPaymentCycleCd());
     }
@@ -190,9 +201,11 @@ public class RqdocService {
             resDto.setPaymentCycleCd(sub.getPaymentCycleCd());
             resDto.setPaymentMthCd(sub.getPaymentMthCd());
             resDto.setPrice(sub.getPrice());
-            resDto.setRemainPrice(calPrice(sub, rqdocHst.getCnt()));
+            resDto.setRemainPrice(calMngPrice(sub, rqdocHst.getCnt()));
             resDto.setTotalCnt(calTotalCnt(sub));
-            resDto.setRemainCnt(calTotalCnt(sub) - rqdocHst.getCnt());
+
+            int remainCnt = calTotalCnt(sub) - rqdocHst.getCnt();
+            resDto.setRemainCnt(remainCnt);
 
             resDtos.add(resDto);
         }

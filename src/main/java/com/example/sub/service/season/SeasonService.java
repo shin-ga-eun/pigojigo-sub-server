@@ -66,6 +66,14 @@ public class SeasonService {
         return getSeasonGetDtos(dtos, list);
     }
 
+    public List<SeasonGetDto> getSeasonsByMonth() {
+
+        List<SeasonGetDto> dtos = new ArrayList<>();
+        List<Season> list = seasonRepository.findByMonth(5);
+
+        return getSeasonGetDtos(dtos, list);
+    }
+
     public void delSeason(SeasonDeleteDto seasonDeleteDto) {
         Season season = seasonRepository.findBySid(seasonDeleteDto.getSid());
         SeasonImg seasonImg = seasonImgRepository.findBySeason(season).get();

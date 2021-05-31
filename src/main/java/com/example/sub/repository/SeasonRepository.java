@@ -12,5 +12,7 @@ public interface SeasonRepository extends JpaRepository<Season, Long> {
 
     List<Season> findAll();
 
+    List<Season> findByMonth(int month);
+
 //    List<Season> findByMonth();
 }

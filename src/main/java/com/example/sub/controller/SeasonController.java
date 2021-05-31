@@ -45,6 +45,12 @@ public class SeasonController {
         return seasonService.getSeasons();
     }
 
+    @RequestMapping(value = "/seasons/5", method = RequestMethod.GET)
+    public List<SeasonGetDto> getSeasonsByMonth() {
+
+        return seasonService.getSeasonsByMonth();
+    }
+
     @RequestMapping(value="/season/del", method=RequestMethod.POST)
     public void delSeason (@RequestBody SeasonDeleteDto seasonDeleteDto){
         seasonService.delSeason(seasonDeleteDto);
