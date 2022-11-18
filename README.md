@@ -1,5 +1,5 @@
 # pigojigo-sub-server
-졸업작품 서버
+배달의민꽃, 서버
 
 ## 개요 ##
 
