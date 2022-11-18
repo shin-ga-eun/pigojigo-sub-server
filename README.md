@@ -18,7 +18,10 @@
 본 프로젝트는 꽃에 구독경제 개념을 적용하여 웹 기반 꽃 정기구독 서비스를 제공하고자합니다.
 
 
-## 사용자별 기능 정의 ##
+### 기술 소개 ###
+<img width="450" alt="스크린샷 2022-11-18 오후 1 04 15" src="https://user-images.githubusercontent.com/31677736/202614244-5053e3b8-8f05-40e9-a72e-2c1882a3bffd.png">
+
+### 기능 정의 ###
 (1) 고객
 - 꽃 정기구독 신청
 - 시즌상품 조회
@@ -30,4 +33,11 @@
 - 현재 진행단계 조회
 - 고객후기 조회/관리
 
-<img width="394" alt="image" src="https://user-images.githubusercontent.com/31677736/201520908-5a932a58-a8c1-4a37-9cdf-5e1b7077b65f.png">
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/31677736/201520908-5a932a58-a8c1-4a37-9cdf-5e1b7077b65f.png">
+
+### 프로세스 정의 ###
+
+<img width="450" alt="스크린샷 2022-11-18 오후 1 02 01" src="https://user-images.githubusercontent.com/31677736/202613996-0cc4a71b-8955-4731-acb9-a2075637ef0d.png">
+
+
+
